@@ -2,7 +2,7 @@
 
 name: gradle-ci
 
-on: [ push, pull_request ]
+on: [ push, pull_request, workflow_dispatch ]
 
 jobs:
   build:
@@ -21,4 +21,3 @@ jobs:
       with:
         name: build-artifacts
         path: build/libs
-
